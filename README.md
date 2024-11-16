@@ -1,7 +1,7 @@
 # Learn Matriks Website 🌐
 
 Visit the live website here :  
-👉 [Learn Matriks Website]()  
+👉 [Learn Matriks Website](https://anggawibawa.github.io/learn-matriks-website/)  
 
 This project is a web-based platform designed to help everyone learn about matrices, built using **HTML**, **CSS**, and **JavaScript**. The website leverages modern libraries such as **AOS (Animate On Scroll)** for engaging animations and **Typed.js** for dynamic text effects, making learning about matrices visually appealing and interactive. 
 
