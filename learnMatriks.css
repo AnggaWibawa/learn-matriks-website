@@ -474,12 +474,12 @@ section.active {
     width: 600px;
   }
 
-  .cont-challenge img {
-    width: 500px;
-  }
-
   .secondline img {
     width: 600px;
+  }
+
+  .cont-challenge img {
+    width: 500px;
   }
 }
 
@@ -536,6 +536,10 @@ section.active {
 
   .contohsoal {
     width: 300px;
+  }
+
+  .example h1 {
+    font-size: 2em;
   }
 
   .secondline img {
