@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./learnMatriks.css" />
+    <link
+      rel="shortcut icon"
+      href="./Resource/matrikslogo.png"
+      type="image/x-icon"
+    />
+    <title>Learn Matriks</title>
+  </head>
+  <body>
+    <!-- background -->
+    <div class="video-background">
+      <video autoplay loop muted playsinline>
+        <source src="./Resource/matrixraincode.mp4" type="video/mp4" />
+        Browser Anda tidak mendukung video tag.
+      </video>
+    </div>
+    <!-- bg-end -->
+    <main>
+      <header>
+        <h1>Matriks</h1>
+      </header>
+      <div id="flexbox">
+        <a href="#" class="box" data-category="definition"
+          >Pengertian Matriks</a
+        >
+
+        <a href="#" class="box" data-category="types">Jenis - Jenis Matriks</a>
+
+        <a href="#" class="box" data-category="operation">Operasi Matriks</a>
+
+        <a href="#" class="box" data-category="example"
+          >Contoh Soal dan Pembahasan</a
+        >
+
+        <a href="#" class="box" data-category="challenge">Latihan Soal</a>
+      </div>
+      <div class="developer">
+        <h3>Dikembangkan Bersama oleh :</h3>
+        <ul>
+          <li>Dewa Made Angga Wibawa (2)</li>
+          <li>I Gusti Komang Krisna Aditya (6)</li>
+          <li>I Gusti Ngurah Nararya Bayu Pramana(8)</li>
+          <li>I Kadek Arditya Putra (10)</li>
+          <li>Ni Putu Nanda Suryaningsih (32)</li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- bottom structure -->
+    <!-- definition -->
+    <section class="definition" data-section="definition">
+      <button class="close-btn">&times;</button>
+      <h1>Pengertian Matriks</h1>
+      <div class="cont-definition">
+        <p>
+          <span>Matriks</span> adalah susunan bilangan-bilangan dalam bentuk
+          baris dan kolom yang membentuk persegi panjang atau persegi, yang
+          digunakan untuk mewakili data atau nilai dalam bentuk yang
+          terstruktur. Setiap elemen dalam matriks memiliki posisi tertentu
+          berdasarkan nomor baris dan kolomnya. Secara matematis, matriks
+          dinotasikan dengan huruf kapital (misalnya, , , atau ), dan
+          elemen-elemennya dapat diidentifikasi dengan notasi dua indeks.
+          Sebagai contoh, matriks 2x3 (2 baris dan 3 kolom) dapat ditulis
+          sebagai :
+        </p>
+        <!-- image -->
+        <img
+          src="./Resource/pengertianmatriks.jpg"
+          alt="Foto Pendamping Sebagai Pengertian Matriks"
+        />
+        <p>
+          Dalam matriks ini, ada dua baris dan tiga kolom, dengan elemen-elemen
+          yang berisi angka-angka dari 1 hingga 6.
+        </p>
+      </div>
+    </section>
+    <!-- d-end -->
+
+    <!-- types -->
+    <section class="types" data-section="types">
+      <button class="close-btn">&times;</button>
+      <h1>Jenis - Jenis Matriks</h1>
+      <div class="cont-types">
+        <!-- no 1 -->
+        <h2><span>1. </span>Matriks Baris</h2>
+        <p>
+          Matriks dengan satu baris dan beberapa kolom, ditulis sebagai 1 × n.
+          <span>Seperti :</span>
+        </p>
+        <img src="./Resource/matriksbaris.jpg" alt="Matriks Baris" />
+
+        <!-- no 2 -->
+        <h2><span>2. </span>Matriks Kolom</h2>
+        <p>
+          Matriks dengan satu kolom dan beberapa baris, ditulis sebagai m x1.
+          <span>Seperti :</span>
+        </p>
+        <img src="./Resource/matrikskolom.jpg" alt="Matriks Kolom" />
+
+        <!-- no 3 -->
+        <h2><span>3. </span>Matriks Persegi</h2>
+        <p>
+          Matriks dengan jumlah baris sama dengan jumlah kolom, ditulis sebagai
+          n × n. Contohnya adalah matriks identitas yang memiliki elemen
+          diagonal bernilai satu dan lainnya nol. <span>Seperti :</span>
+        </p>
+        <img src="./Resource/matrikspersegi.jpg" alt="Matriks Persegi" />
+
+        <!-- no 4 -->
+        <h2><span>4. </span>Matriks Diagonal</h2>
+        <p>
+          Matriks persegi di mana semua elemen non-diagonal bernilai nol.
+          <span>Seperti :</span>
+        </p>
+        <img src="./Resource/matriksdiagonal.jpg" alt="Matriks Diagonal" />
+
+        <!-- no 5 -->
+        <h2><span>5. </span>Matriks Identitas</h2>
+        <p>
+          Matriks diagonal khusus dengan elemen diagonal utama bernilai satu.
+          <span>Seperti :</span>
+        </p>
+        <img src="./Resource/matriksidentitas.jpg" alt="Matriks Identitas" />
+
+        <!-- no 6 -->
+        <h2><span>6. </span>Matriks 0</h2>
+        <p>
+          Semua elemen dalam matriks bernilai nol.
+          <span>Seperti :</span>
+        </p>
+        <img src="./Resource/matriksnol.jpg" alt="Matriks Nol" />
+
+        <!-- no 7 -->
+        <h2><span>7. </span>Matriks Simetri</h2>
+        <p>
+          Matriks yang sama dengan transposenya, artinya A = A^T.
+          <span>Seperti :</span>
+        </p>
+        <img src="./Resource/matrikstranspose.jpg" alt="Matriks Transpose" />
+      </div>
+    </section>
+    <!-- t-end -->
+
+    <!-- operation -->
+    <section class="operation" data-section="operation">
+      <button class="close-btn">&times;</button>
+      <h1>Operasi Matriks</h1>
+      <div class="cont-operation">
+        <h2><span>1. </span>Penjumlahan dan Pengurangan:</h2>
+        <p>
+          Menambahkan atau mengurangi elemen-elemen yang seletak pada dua
+          matriks dengan ukuran sama.
+        </p>
+
+        <h2><span>2. </span>Perkalian dengan Skalar:</h2>
+        <p>Mengalikan setiap elemen dalam matriks dengan sebuah bilangan.</p>
+
+        <h2><span>3. </span>Perkalian Matriks:</h2>
+        <p>
+          Mengalikan baris matriks pertama dengan kolom matriks kedua secara
+          berurutan lalu jumlahkan hasilnya.
+        </p>
+
+        <h2><span>4. </span>Transpose:</h2>
+        <p>Menukar posisi baris dan kolom pada suatu matriks.</p>
+
+        <h2>Contoh Operasi Matriks <span>Seperti :</span></h2>
+        <img src="./Resource/operasimatriks.jpg" alt="Contoh Operasi Matriks" />
+      </div>
+    </section>
+    <!-- o-end -->
+
+    <!-- example -->
+    <section class="example" data-section="example">
+      <button class="close-btn">&times;</button>
+      <h1>Contoh Soal dan Pembahasan</h1>
+      <div class="cont-example">
+        <!-- line 1 -->
+        <div class="firstline">
+          <img
+            src="./Resource/contohsoal.jpg"
+            alt="Contoh Soal Matriks"
+            class="contohsoal"
+          />
+          <div class="cont-exampletext">
+            <h2>
+              Oke coba perhatikan contoh soal pada <span>gambar tersebut!</span>
+            </h2>
+            <h2>
+              Kita diminta untuk menghitung hasil dari pertanyaan yang
+              disampaikan.
+            </h2>
+            <p><span id="answer"></span> kita hanya perlu :</p>
+            <ol>
+              <li>Menjumlahkan elemen-elemen pada Matriks</li>
+              <li>Mengurangkan elemen-elemen pada Matriks</li>
+              <li>Mengalikan elemen-elemen Matriks dengan angka skalar</li>
+              <li>
+                Menjumlahkan hasil kali elemen-elemen pada baris dan kolom
+                Matriks
+              </li>
+            </ol>
+            <h2>
+              Tetapi, bagaimana caranya? Simak pembahasannya di bawah ini!
+            </h2>
+          </div>
+        </div>
+        <!-- l1-end -->
+
+        <!-- scroll line 2 -->
+        <div class="secondline">
+          <!-- no 1 -->
+          <h2><span>1. </span>Penjumlahan Matriks</h2>
+          <p>
+            Penjumlahan matriks dilakukan dengan menambahkan elemen-elemen yang
+            sesuai pada posisi yang sama. <span>Seperti :</span>
+          </p>
+          <img
+            src="./Resource/penjumlahanmatriks.jpg"
+            alt="Penjumlahan Matriks"
+          />
+
+          <!-- no 2 -->
+          <h2><span>2. </span>Pengurangan Matriks</h2>
+          <p>
+            Pengurangan matriks dilakukan dengan mengurangkan elemen-elemen yang
+            sesuai pada posisi yang sama. <span>Seperti :</span>
+          </p>
+          <img
+            src="./Resource/penguranganmatriks.jpg"
+            alt="Pengurangan Matriks"
+          />
+
+          <!-- no 3 -->
+          <h2><span>3. </span>Perkalian Skalar Matriks</h2>
+          <p>
+            Perkalian skalar dilakukan dengan mengalikan setiap elemen matriks
+            dengan angka skalar (dalam hal ini 3). <span>Seperti :</span>
+          </p>
+          <img
+            src="./Resource/perkalianskalarmatriks.jpg"
+            alt="Perkalian Skalar Matriks"
+          />
+
+          <!-- no 4 -->
+          <h2><span>4. </span>Perkalian Matriks</h2>
+          <p>
+            Untuk perkalian matriks, kita menggunakan aturan berikut: elemen di
+            baris pertama dan kolom pertama dari hasil perkalian diperoleh
+            dengan menjumlahkan hasil kali elemen-elemen di baris pertama
+            matriks pertama dengan elemen-elemen di kolom pertama matriks
+            kedua, dan seterusnya. <span>Seperti :</span>
+          </p>
+          <img src="./Resource/perkalianmatriks.jpg" alt="Perkalian Matriks" />
+          <h3>Lalu kita hitung setiap elemen!</h3>
+
+          <!-- b1 k1 -->
+          <p>Baris 1, Kolom 1:</p>
+          <img
+            src="./Resource/baris1kolom1.jpg"
+            alt="Operasi Matriks Pada Baris 1 dan Kolom 1"
+          />
+
+          <!-- b1 k2 -->
+          <p>Baris 1, Kolom 2:</p>
+          <img
+            src="./Resource/baris1kolom2.jpg"
+            alt="Operasi Matriks Pada Baris 1 dan Kolom 2"
+          />
+
+          <!-- b2 k1 -->
+          <p>Baris 2, Kolom 1:</p>
+          <img
+            src="./Resource/baris2kolom1.jpg"
+            alt="Operasi Matriks Pada Baris 2 dan Kolom 1"
+          />
+
+          <!-- b2 k2 -->
+          <p>Baris 2, Kolom 2:</p>
+          <img
+            src="./Resource/baris2kolom2.jpg"
+            alt="Operasi Matriks Pada Baris 2 dan Kolom 2"
+          />
+
+          <!-- hasil perkalian matriks -->
+          <h3>Maka dari itu dapatlah hasilnya seperti di bawah ini :</h3>
+          <img
+            src="./Resource/hasilperkalianmatriks.jpg"
+            alt="Hasil Dari Perkalian Matriks Yang Sudah Melalui Berbagai Operasi"
+          />
+        </div>
+
+        <!-- sl2-end -->
+      </div>
+    </section>
+    <!-- e-end -->
+
+    <!-- challenge -->
+    <section class="challenge" data-section="challenge">
+      <button class="close-btn">&times;</button>
+      <h1>Latihan Soal</h1>
+      <div class="cont-challenge">
+        <h2>Pilihlah salah satu soal yang ingin dikerjakan!</h2>
+
+        <!-- no 1 -->
+        <h2><span>1. </span>Penjumlahan Matriks</h2>
+        <img
+          src="./Resource/latihansoalmatriks1.jpg"
+          alt="Latihan Soal Penjumlahan Matriks"
+        />
+
+        <!-- no 2 -->
+        <h2><span>2. </span>Pengurangan Matriks</h2>
+        <img
+          src="./Resource/latihansoalmatriks2.jpg"
+          alt="Latihan Soal Pengurangan Matriks"
+        />
+
+        <!-- no 3 -->
+        <h2><span>3. </span>Perkalian Skalar Matriks</h2>
+        <img
+          src="./Resource/latihansoalmatriks3.jpg"
+          alt="Latihan Soal Perkalian Skalar Matriks"
+        />
+
+        <!-- no 4 -->
+        <h2><span>4. </span>Perkalian Matriks</h2>
+        <img
+          src="./Resource/latihansoalmatriks4.jpg"
+          alt="Latihan Soal Perkalian Matriks"
+        />
+      </div>
+    </section>
+    <!-- c-end -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+  --Green: #00ff60;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--Grey-900);
+  color: var(--White);
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  max-width: 50%;
+}
+
+section h1 {
+  font-size: 4em;
+}
+
+.hand {
+  display: inline-block; /* Supaya bisa dianimasikan */
+  transform-origin: bottom; /* Titik rotasi di bawah */
+
+  /* Animasi */
+  animation: wave 1s ease-in-out infinite alternate;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg); /* Posisi awal */
+  }
+  50% {
+    transform: rotate(10deg); /* Rotasi ke kanan */
+  }
+  100% {
+    transform: rotate(-10deg); /* Rotasi ke kiri */
+  }
+}
+
+section h2 span {
+  color: var(--Green);
+  font-weight: 600;
+  text-shadow: 0 0 5px var(--Green);
+}
+
+section h2 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+section h4 {
+  font-weight: 200;
+  letter-spacing: 0.17em;
+}
+
+.learn {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+}
+
+.learn a {
+  color: var(--Green);
+  padding: 10px 20px;
+  border: 1px solid var(--Green);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  animation: load-animation 1.5s ease-in forwards;
+}
+
+.learn a:hover {
+  color: black;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.15);
+  background-color: var(--Green);
+  box-shadow: 0 0 5px var(--Green), 0 0 25px var(--Green), 0 0 50px var(--Green),
+    0 0 200px var(--Green);
+}
+
+@keyframes load-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.matriksContainer {
+  position: relative;
+  height: 60%;
+  width: 35%;
+  border: 1px solid var(--Green);
+  border-radius: 20px;
+  box-shadow: 0 0 25px var(--Green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-background {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Posisi video di belakang konten */
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  filter: blur(5px);
+  object-fit: cover; /* Memastikan video memenuhi seluruh layar */
+}
+
+.matriksContainer img {
+  width: 600px;
+  height: 399px;
+}
+
+@media screen and (max-width: 1250px) {
+  section h1 {
+    font-size: 3.8em;
+  }
+
+  section h2 {
+    font-size: 3em;
+    font-weight: 500;
+  }
+
+  section h4 {
+    font-weight: 200;
+    letter-spacing: 0.17em;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  section h1 {
+    font-size: 3.5em;
+  }
+
+  section h2 {
+    font-size: 3em;
+    font-weight: 500;
+  }
+
+  section h4 {
+    font-weight: 200;
+    letter-spacing: 0.17em;
+  }
+
+  .matriksContainer img {
+    width: 400px;
+    height: 299px;
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  section h1 {
+    font-size: 3.2em;
+  }
+
+  section h2 {
+    font-size: 3em;
+    font-weight: 500;
+  }
+
+  section h4 {
+    font-weight: 200;
+    letter-spacing: 0.17em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section h1 {
+    font-size: 2.8em;
+  }
+
+  section h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+
+  section h4 {
+    font-weight: 200;
+    letter-spacing: 0.17em;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  main {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 25px;
+    padding: 2em;
+  }
+
+  section h1 {
+    font-size: 2.7em;
+  }
+
+  section h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+
+  section h4 {
+    font-weight: 200;
+    letter-spacing: 0.17em;
+  }
+
+  .matriksContainer {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  section {
+    max-width: 80%;
+  }
+
+  .matriksContainer {
+    width: 80%;
+  }
+
+  .matriksContainer img {
+    width: 350px;
+    height: 299px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  section h1 {
+    font-size: 2em;
+  }
+
+  section h2 {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  section h4 {
+    font-weight: 200;
+    letter-spacing: 0.17em;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  section {
+    max-width: 100%;
+  }
+
+  .matriksContainer {
+    width: 100%;
+  }
+
+  .matriksContainer img {
+    width: 350px;
+    height: 299px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .matriksContainer img {
+    width: 300px;
+    height: 199px;
+  }
+}
